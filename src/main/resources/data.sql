@@ -1,3 +1,15 @@
+
+-- TODO: 테스트용이지만 비밀번호가 노출된 데이터 세팅. 개선하는 것이 좋을 지 고민해 보자.
+insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by) values
+    ('uno', '{noop}asdf1234', 'Uno', 'uno@mail.com', 'I am Uno.', now(), 'uno', now(), 'uno')
+;
+insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by) values
+    ('uno2', '{noop}asdf1234', 'Uno2', 'uno2@mail.com', 'I am Uno2.', now(), 'uno2', now(), 'uno2')
+;
+insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by) values
+    ('uno3', '{noop}asdf1234', 'Uno3', 'uno3@mail.com', 'I am Uno3.', now(), 'uno3', now(), 'uno3')
+;
+
 insert into article (title, content, hashtag, created_by, modified_by, created_at, modified_at) values ('Maecenas ut massa quis augue luctus tincidunt.', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 'Indigo', 'Faith', 'Gareth', '2022-09-16 07:41:33', '2022-12-13 23:40:24');
 insert into article (title, content, hashtag, created_by, modified_by, created_at, modified_at) values ('In est risus, auctor sed, tristique in, tempus sit amet, sem.', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 'Orange', 'Ingamar', 'Harriette', '2022-10-01 01:45:56', '2022-09-23 01:06:23');
 insert into article (title, content, hashtag, created_by, modified_by, created_at, modified_at) values ('In hac habitasse platea dictumst.', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 'Violet', 'Gothart', 'Cash', '2023-05-08 17:02:07', '2023-03-13 11:12:15');

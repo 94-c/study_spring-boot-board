@@ -15,7 +15,7 @@ import java.util.Objects;
         @Index(columnList = "createdBy")
 })
 @Entity
-class UserAccount extends AuditingFields {
+public class UserAccount extends AuditingFields {
     @Id
     @Column(length = 50)
     private String userId;
